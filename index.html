@@ -21,7 +21,7 @@
     <![endif]-->
   </head>
   <body>
-        <nav id="custom-nav" class="navbar navbar-transparent navbar-fixed-top animated fadeIn">
+        <nav id="custom-nav" class="navbar navbar-default navbar-fixed-top animated fadeIn">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -60,22 +60,100 @@
                 <h1 id="homeHeading" class="napis">ZAPRASZAM CIĘ DO MOJEGO STOŁU</h1>
                 <hr>
                 <p>Od Ciebie zależy czy będziesz dalej głodny</p>
+                <center><a class="page-scroll" href="#about"><img src="img/scroll.png" alt=""></a></center>
             </div>
         </div>
     </header>
      </div>
 </div>
+
 <div class="about">
+<div id="about"></div>
 <div class="container">
       <div class="row">
-          <div class="col-md-9"> <h1>Witaj,</h1>
+          <div class="col-md-9 col-xs-6"> <h1>Witaj,</h1>
 Mam na imię Maciej, mam 20 lat, jestem świeżo po ślubie, pod koniec 2016r przyszedł na świat mój synek Nikodem. Zawodowo- skończyłem szkołę gastronomiczną, do nie dawna pracowałem  jako kucharz na Podlasiu i nie tylko. W lutym 2017 podjąłem decyzję o zmianie branży. Doszedłem do wniosku ,że praca w gastronomii pochłaniała mi większość mojego czasu. W tej chwili rodzina jest moim priorytetem. Aktualnie pracuje jako informatyk. Dążę do wolności finansowej. Wykorzystuje alternatywne sposoby zarabiania, które daje nam XXIw. </div>
-          <div class="col-md-3"><img src="img/tumbface.jpg" alt="" width="100%"></div>
+          <div class="col-md-3 col-xs-6"><img src="img/tumbface.jpg" alt="" width="100%" style="padding: 15px; margin-top: 50px;"></div>
       </div>
 
 
 </div>
 </div>
+<div id="kontakt"></div>
+   <div class="kontakt">
+    <div class="container">
+        <center><h2> <span style="font-size: 48px;">Kontakt</span></h2><br></center>
+     <div class="row">
+         <div class="col-md-12">
+             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam assumenda quod repudiandae natus, laudantium dolorum perferendis, asperiores voluptatibus esse perspiciatis, ut nulla. Dolores, molestiae voluptate voluptatem velit quo ad. Expedita? </p>
+         </div>    
+     </div>
+     <br><br>
+
+
+<form id="contact-form" method="post" action="contact.php" role="form">
+
+    <div class="messages"></div>
+
+    <div class="controls">
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_name">Imię *</label>
+                    <input id="form_name" type="text" name="name" class="form-control formul" placeholder="Np. Jan *" required="required" data-error="Firstname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_lastname">Nazwisko *</label>
+                    <input id="form_lastname" type="text" name="surname" class="form-control formul" placeholder="Np. Kowalski *" required="required" data-error="Lastname is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_email">E-mail *</label>
+                    <input id="form_email" type="email" name="email" class="form-control formul" placeholder="Twój adres e-mail *" required="required" data-error="Valid email is required.">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="form-group">
+                    <label for="form_phone">Numer telefonu</label>
+                    <input id="form_phone" type="tel" name="phone" class="form-control formul" placeholder="Twój numer telefonu">
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="form-group">
+                    <label for="form_message">Wiadomość *</label>
+                    <textarea id="form_message" name="message" class="form-control formul" placeholder="Wiadomość *" rows="4" required="required" data-error="Please,leave us a message."></textarea>
+                    <div class="help-block with-errors"></div>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <input type="submit" class="btn btn-success btn-send" value="Wyślij wiadomosć">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <p class="text-muted"><strong>*</strong> Wymagane pola.</p>
+            </div>
+        </div>
+    </div>
+
+</form>
+      
+
+     
+    </div>
+</div>   
 <div class="footer">
     <div class="container">
             <center>domain.com 2017 ⓒ  | <a href="http://webmas.pl">Webmas.pl</a> </center>
@@ -89,5 +167,22 @@ Mam na imię Maciej, mam 20 lat, jestem świeżo po ślubie, pod koniec 2016r pr
     <script src="js/bootstrap.min.js"></script>
         <script src="js/parallax.js"></script>
         <script src="js/app.js"></script>
+          <script src="js/jquery.smooth-scroll.js"></script>
+          <script>
+          $(function() {
+  $('a[href*="#"]:not([href="#"])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html, body').animate({
+          scrollTop: target.offset().top -100
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});  
+      </script>
   </body>
 </html>

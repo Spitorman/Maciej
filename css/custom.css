@@ -10,30 +10,14 @@ html, body {
     padding-top: 25px; 
 }
 
-.navbar-tranparen{
-    background-color: black;
-    border-color: rgba(255,255,255,0.4);
-    
+.navbar-default {
+     background-color: rgba(255, 255, 255, 0.8);
 }
-.navbar-tranparen .navbar-brand{
-    color: rgba(255,255,255,0.8);
-    font-weight: 600;
-    
-}
-.navbar-transparent .navbar-nav>li>a {
-    color:white;
-    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
-    font-size: 18px;
-    font-weight: 600;
-    
-    &:hover{
-        background-color: #fff;
-    }
-    
+.navbar-inverse {
+     background-color: rgba(33, 33, 33, 0.9);
 }
 .navbar-brand {
     color: white;
-    
     font-size: 24px;
     margin-top: -15px;
     text-align: center;
@@ -72,7 +56,7 @@ a:hover {
   }
   header .header-content {
     position: absolute;
-    top: 35%;
+    top: 25%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -128,7 +112,7 @@ a:hover {
   }
   header .header-content {
     position: absolute;
-    top: 15%;
+    top: 11%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);

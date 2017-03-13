@@ -21,7 +21,22 @@
     <![endif]-->
   </head>
   <body>
-        <nav id="custom-nav" class="navbar navbar-default navbar-fixed-top animated fadeIn">
+        
+     <div class="jumbotron">
+     <div class="container ">
+                <header>
+        <div class="header-content">
+            <div class="header-content-inner napis">
+                <h1 id="homeHeading" class="napis">ZAPRASZAM CIĘ DO MOJEGO STOŁU</h1>
+                <hr>
+                <p>Od Ciebie zależy czy będziesz dalej głodny</p>
+                <center><a class="page-scroll" href="#about"><img src="img/scroll.png" alt=""></a></center>
+            </div>
+        </div>
+    </header>
+     </div>
+</div>
+<nav id="custom-nav" class="navbar navbar-inverse animated fadeIn">
         <div class="container-fluid">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header">
@@ -52,22 +67,8 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-     <div class="jumbotron">
-     <div class="container ">
-                <header>
-        <div class="header-content">
-            <div class="header-content-inner napis">
-                <h1 id="homeHeading" class="napis">ZAPRASZAM CIĘ DO MOJEGO STOŁU</h1>
-                <hr>
-                <p>Od Ciebie zależy czy będziesz dalej głodny</p>
-                <center><a class="page-scroll" href="#about"><img src="img/scroll.png" alt=""></a></center>
-            </div>
-        </div>
-    </header>
-     </div>
-</div>
-
 <div class="about">
+<div class="navtop"></div>
 <div id="about"></div>
 <div class="container">
       <div class="row">
@@ -176,7 +177,7 @@ Mam na imię Maciej, mam 20 lat, jestem świeżo po ślubie, pod koniec 2016r pr
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: target.offset().top -100
+          scrollTop: target.offset().top -200
         }, 1000);
         return false;
       }

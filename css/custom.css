@@ -9,7 +9,12 @@ html, body {
     height: 100px;
     padding-top: 25px; 
 }
-
+.navbar {
+    margin: 0px;
+}
+.navtop {
+    height: 80px;
+}
 .navbar-default {
      background-color: rgba(255, 255, 255, 0.8);
 }
@@ -80,7 +85,6 @@ a:hover {
 
 
 
-
 .footer {
     height: 100px;
     width: 100%;
@@ -91,14 +95,7 @@ a:hover {
 }
 
 @media (max-width: 768px) {
-   .jumbotron{
-    height: 450px;
-    background-image: url(../img/jumb.jpg);
-    background-position: 50% 50%;
-    background-size: cover;
-    margin: 0px;
 
-} 
     .navbar-brand {
     color: white;
     
@@ -112,7 +109,7 @@ a:hover {
   }
   header .header-content {
     position: absolute;
-    top: 11%;
+    top: 18%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);

@@ -4,9 +4,6 @@ html, body {
     font-size: 18px;    
 
 }
-.modalek {
-     width: 80%;
-}
 #custom-nav {
     height: 100px;
     padding-top: 25px; 
@@ -68,6 +65,13 @@ a:hover {
 }
 .imgtat:hover {
     cursor: pointer;
+}
+.kontakt {
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    background: #d3d3d3;
+    
 }
 
 @media (min-width: 768px) {

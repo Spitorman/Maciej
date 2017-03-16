@@ -4,7 +4,9 @@ html, body {
     font-size: 18px;    
 
 }
-
+.modalek {
+     width: 80%;
+}
 #custom-nav {
     height: 100px;
     padding-top: 25px; 
@@ -33,7 +35,7 @@ html, body {
     color: white;
 }
 a:hover {
-    color: white;
+   text-decoration: none;
 }
 .navbar-collapse {
     font-size: 18px;
@@ -52,16 +54,30 @@ a:hover {
     text-align: center;
 
 }
-
-
+.pytania {
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    background: #d3d3d3;
+}
+.tuzarabiam {
+    width: 100%;
+    height: auto;
+    padding: 25px;
+    background: white;
+}
+.imgtat:hover {
+    cursor: pointer;
+}
 
 @media (min-width: 768px) {
+
   header {
     min-height: 100%;
   }
   header .header-content {
     position: absolute;
-    top: 25%;
+    top: 15%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);
@@ -109,7 +125,7 @@ a:hover {
   }
   header .header-content {
     position: absolute;
-    top: 18%;
+    top: 8%;
     -webkit-transform: translateY(-50%);
     -ms-transform: translateY(-50%);
     transform: translateY(-50%);

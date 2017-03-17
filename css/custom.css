@@ -12,7 +12,8 @@ html, body {
     margin: 0px;
 }
 .navtop {
-    height: 80px;
+    height: 90px;
+    margin: 0;
 }
 .navbar-default {
      background-color: rgba(255, 255, 255, 0.8);
@@ -51,28 +52,47 @@ a:hover {
     text-align: center;
 
 }
-.pytania {
-    width: 100%;
-    height: auto;
-    padding: 25px;
-    background: #d3d3d3;
+.shadownapis {
+    text-shadow: 2px 0 0 #000, -2px 0 0 #000, 0 2px 0 #000, 0 -2px 0 #000, 1px 1px #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000;
+    color: white;
+    
 }
 .tuzarabiam {
     width: 100%;
     height: auto;
-    padding: 25px;
+    padding: 50px 25px 25px;
     background: white;
 }
 .imgtat:hover {
     cursor: pointer;
 }
 .kontakt {
-    width: 100%;
-    height: auto;
-    padding: 25px;
-    background: #d3d3d3;
+    color: white;
     
 }
+.parallax-window {
+    padding-top: 80px;
+    padding-bottom: 50px;
+    height: auto;
+    background: transparent;
+}
+
+
+.about {
+    min-height: auto;
+    background-color: white;
+    padding: 150px 50px 25px;
+}
+
+
+.formul {
+    background-color: #2a2a2a;
+    color: white;
+}
+
+
+
+
 
 @media (min-width: 768px) {
 
@@ -96,11 +116,7 @@ a:hover {
     margin-right: auto;
   }
 }
-.about {
-    min-height: 400px;
-    background-color: #f6f6f6;
-    padding: 50px;
-}
+
 
 
 

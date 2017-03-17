@@ -67,9 +67,8 @@
         </div>
         <!-- /.container-fluid -->
     </nav>
-    
+<div class="navi"></div>   
 <div class="about">
-<div class="navtop"></div>
 <div id="about"></div>
 <div class="container">
       <div class="row">
@@ -82,9 +81,9 @@ Mam na imię Maciej, mam 20 lat, jestem świeżo po ślubie, pod koniec 2016r pr
 </div>
 </div>
 
-<div class="pytania">
+<div class="parallax-window" data-parallax="scroll" data-image-src="img/pyt.jpg">
     <div class="container">
-        <center><h2> <span style="font-size: 48px;">Pytania i odpowiedzi</span></h2><br></center>
+        <center><h2 class="shadownapis"> <span style="font-size: 48px;">Pytania i odpowiedzi</span></h2><br></center>
         <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
   <div class="panel panel-default">
     <div class="panel-heading" role="tab" id="headingOne">
@@ -239,7 +238,7 @@ Dodatkowe źródło dochodu w firmie jest bardzo istotnym faktem.
 </div>
 
 <div id="kontakt"></div>
-   <div class="kontakt">
+   <div class="parallax-window kontakt" data-parallax="scroll" data-image-src="img/kontakt.jpg">
     <div class="container">
         <center><h2> <span style="font-size: 48px;">Kontakt</span></h2><br></center>
      <div class="row">
@@ -302,7 +301,7 @@ Dodatkowe źródło dochodu w firmie jest bardzo istotnym faktem.
         </div>
         <div class="row">
             <div class="col-md-12">
-                <p class="text-muted"><strong>*</strong> Wymagane pola.</p>
+                <p><strong>*</strong> Wymagane pola.</p>
             </div>
         </div>
     </div>
@@ -335,7 +334,7 @@ Dodatkowe źródło dochodu w firmie jest bardzo istotnym faktem.
       target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
       if (target.length) {
         $('html, body').animate({
-          scrollTop: target.offset().top -200
+          scrollTop: target.offset().top -100
         }, 1000);
         return false;
       }

@@ -10,7 +10,7 @@ $(document).ready(function () {
             $('.navi').addClass('navtop');
         } else {
             $('.navbar').removeClass('navbar-fixed-top');
-            $('.content').removeClass('navtop');
+            $('.navi').removeClass('navtop');
         }
 
 
